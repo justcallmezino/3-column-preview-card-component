@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'outfit', Sans-Serif;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+}
+
+.card {
+  color: white;
+  padding: 40px;
+}
+
+.card-container {
+  padding: 40px;
+}
+
+.card p {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.card-1 {
+  background: hsl(31, 77%, 52%);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.card-2 {
+  background: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background: hsl(179, 100%, 13%);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 80%;
+  border-radius: 50px;
+  background-color: white;
+}
+
+button:hover {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 1440px) {
+  .container {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .card-1 {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+  }
+  .card-3 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+  }
+}
